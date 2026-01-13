@@ -19,7 +19,7 @@ export default function Hero() {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="hero" style={{ backgroundImage: `url(${heroBg})` }}>
+    <section className="hero pb-1" style={{ backgroundImage: `url(${heroBg})` }}>
       {/* Top Bar */}
       <div className="top-bar desktop-only">
         <div className="contact">

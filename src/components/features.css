@@ -1,0 +1,121 @@
+.features {
+  min-height: 1500px;
+  padding: 120px 100px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.features-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.features-desc {
+  text-align: center;
+  max-width: 600px;
+  margin: 15px auto 80px;
+  line-height: 1.5;
+}
+
+.features-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.features-phone img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  left: 20px;
+  object-fit: cover;
+}
+
+.features-col {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+/* Feature Card Base */
+.features-card {
+  max-width: 320px;
+  margin: 0px;
+}
+
+/* Desktop alignment toward phone */
+
+.features-col.left .features-card {
+  text-align: left;
+  margin-right: auto;
+}
+
+.features-col.right .features-card {
+  text-align: right;
+  margin-left: auto;
+}
+
+
+/* Top & bottom always centered */
+.features-card.chat,
+.features-bottom .features-card {
+  text-align: center;
+  margin: auto;
+}
+
+.features-card h4 {
+  font-size: 22px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.features-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.features-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.25);
+  display: inline-block;
+}
+
+/* Bottom feature spacing */
+.features-bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive: Mobile Layout */
+@media (max-width: 1024px) {
+  .features {
+    padding: 80px 30px;
+  }
+
+  .features-layout {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .features-col {
+    align-items: center;
+    gap: 60px;
+  }
+
+  .features-card,
+  .features-col.left .features-card,
+  .features-col.right .features-card {
+    text-align: center !important;
+    margin: auto !important;
+  }
+}
