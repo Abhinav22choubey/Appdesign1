@@ -1,0 +1,168 @@
+.hero {
+  position: relative;
+  min-height: 100vh; /* instead of 1024px */
+  background-size: cover;
+  background-position: center;
+  font-family: "Josefin Sans", sans-serif;
+  overflow: hidden;
+}
+
+
+/* ================= Top Bar ================= */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 135px;
+  color: white;
+  font-size: 16px;
+}
+
+.contact span {
+  margin-right: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.social {
+  display: flex;
+  align-items: center;
+}
+.social svg {
+  margin-left: 18px;
+  cursor: pointer;
+}
+
+/* ================= Navbar ================= */
+.navbar {
+  background: white;
+  margin: 0 135px;
+  padding: 15px 35px;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links a {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #232233;
+}
+
+.nav-links .active {
+  color: #5956E9;
+  border-bottom: 2px solid #5956E9;
+  padding-bottom: 2px;
+}
+
+.logo-box {
+  position: absolute;
+  background: white;
+left: 621px;
+top: 59px;
+  border-radius: 6px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  width: 250px;
+  height: 120px;
+}
+
+.logo-box img {
+  width: 250px ;
+height: 120px ;
+angle: 0 deg;
+opacity: 1;
+
+left: 621px;
+}
+
+/* ================= Download Button ================= */
+.download-btn {
+  background: #5956E9;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* ================= Hero Content ================= */
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 135px 0; /* reduced from 120px */
+  position: relative;
+}
+
+
+/* ================= Text Box ================= */
+.text-box-border {
+  position: absolute;
+  left: 185px;
+  top: 70px;
+  width: 610px;
+  height: 520px;
+  border: 18px solid rgba(117,114,255,0.9);
+  z-index: 1;
+}
+
+.text-box {
+  position: relative;
+  background: white;
+  width: 610px;
+  height: 432px;
+  padding: 40px 40px;
+  z-index: 2;
+}
+
+.text-box h1 {
+  font-size: 48px;
+  color: #5956E9;
+  text-transform: uppercase;
+  line-height: 62px;
+}
+
+.text-box p {
+  color: #6C6C72;
+  margin: 25px 0;
+  line-height: 28px;
+}
+
+.text-box h4 {
+  font-size: 22px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.store-buttons img {
+  height: 45px;
+  margin-right: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+  display: inline;
+}
+
+/* ================= Mockup ================= */
+.mockup {
+  position: relative;
+  margin-right: 40px;
+}
+
+.mockup img {
+  width: 420px;
+  height: auto;
+  z-index: 2;
+}
