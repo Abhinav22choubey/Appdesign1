@@ -6,6 +6,7 @@ import Screenshots from './components/Screenshot.jsx';
 import UseBefore from './components/UseBefore.jsx';
 import Team from './components/Team.jsx';
 import Reviews from './components/Reviews.jsx';
+import Blog from './components/Blog.jsx';
 export default function App() {
   return (
     <>
@@ -16,6 +17,7 @@ export default function App() {
       <UseBefore></UseBefore>
       <Team></Team>
       <Reviews></Reviews>
+      <Blog></Blog>
     </>
 
   )

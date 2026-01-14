@@ -1,0 +1,180 @@
+/* Section container */
+.orb-section {
+  position: relative;
+  width: 1170px;
+  height: 701px;
+  margin: 80px auto;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* Title */
+.orb-title {
+  position: absolute;
+  width: 312px;
+  height: 48px;
+  left: 429px;
+  top: 0;
+
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 47px;
+  text-transform: uppercase;
+  color: #232233;
+  text-align: center;
+}
+
+/* Subtitle */
+.orb-subtitle {
+  position: absolute;
+  width: 601px;
+  height: 70px;
+  left: 284px;
+  top: 71px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #6c6c72;
+}
+
+/* Cards wrapper (GRID) */
+.orb-cards {
+  position: absolute;
+  top: 201px;
+  left: 0;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Single card */
+.orb-card {
+  position: relative;
+  width: 370px;
+  height: 500px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Image */
+.orb-card-image {
+  width: 370px;
+  height: 228px;
+  object-fit: cover;
+
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Card title */
+.orb-card-title {
+  position: absolute;
+  left: 18px;
+  top: 268px;
+  width: 334px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #232233;
+}
+
+/* Card text */
+.orb-card-text {
+  position: absolute;
+  left: 18px;
+  top: 338px;
+  width: 334px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6c6c72;
+}
+
+/* Read more link */
+.orb-read-more {
+  position: absolute;
+  left: 18px;
+  top: 438px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #5851ea;
+}
+
+/* ========================= */
+/* ===== RESPONSIVE ======= */
+/* ========================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .orb-section {
+    width: 100%;
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .orb-cards {
+    position: relative;
+    top: 0;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .orb-title {
+    position: relative;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .orb-subtitle {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 130px;
+  }
+
+  .orb-cards {
+    grid-template-columns: 1fr; /* ✅ 1 card per row */
+  }
+
+  .orb-card {
+    width: 100%;
+    max-width: 370px;
+  }
+
+  .orb-card-image {
+    width: 100%;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .orb-card-title {
+    font-size: 18px;
+  }
+
+  .orb-read-more {
+    font-size: 18px;
+  }
+}
