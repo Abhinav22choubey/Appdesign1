@@ -1,0 +1,110 @@
+.usebefore-section {
+  position: relative;
+  width: 100%;
+  height: 682px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.usebefore-bg {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  width: 100%;
+  height: 477px;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+/* Title */
+.usebefore-title {
+  margin-top: 162px;
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 47px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  z-index: 1;
+}
+
+/* Text */
+.usebefore-text {
+  margin-top: 23px;
+  width: 601px;
+  max-width: 90%;
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  z-index: 1;
+}
+
+/* Video container */
+.usebefore-video {
+  margin-top: 60px;
+  width: 870px;
+  max-width: 95%;
+  height: 319px;
+  position: relative;
+  z-index: 1;
+}
+
+.usebefore-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+
+/* Play button */
+.usebefore-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Circles */
+.usebefore-circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.usebefore-c1 {
+  width: 70px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.usebefore-c2 {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.usebefore-c3 {
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+}
+
+/* Play icon */
+.usebefore-play-icon {
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+  color: #5956e9;
+  margin-left: 3px;
+}
