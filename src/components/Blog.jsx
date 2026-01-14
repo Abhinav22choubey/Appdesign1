@@ -7,7 +7,7 @@ import blog3 from "../assets/images/Blog/b3.png";
 
 export default function Blog () {
   return (
-    <section className="orb-section">
+    <section id="blog" className="orb-section">
       <h2 className="orb-title">Our recent blog</h2>
 
       <p className="orb-subtitle">

@@ -19,7 +19,7 @@ export default function Hero() {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="hero pb-1" style={{ backgroundImage: `url(${heroBg})` }}>
+    <section id="home" className="hero pb-1" style={{ backgroundImage: `url(${heroBg})` }}>
       {/* Top Bar */}
       <div className="top-bar desktop-only">
         <div className="contact">
@@ -42,13 +42,13 @@ export default function Hero() {
       {/* Desktop Navbar */}
       <div className="navbar desktop-only">
         <div className="nav-links">
-          <a className="active">Home</a>
-          <a>About</a>
-          <a>Features</a>
+          <a href="#home" className="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#features">Features</a>
         </div>
         <div className="nav-links">
-          <a>Screenshot</a>
-          <a>Blog</a>
+          <a href="#screenshot">Screenshot</a>
+          <a href="#blog">Blog</a>
           <button className="download-btn">Download</button>
         </div>
       </div>
@@ -64,11 +64,11 @@ export default function Hero() {
 
       {/* Mobile Menu */}
       <div className={`mobile-nav ${open ? "show" : ""}`}>
-        <a>Home</a>
-        <a>About</a>
-        <a>Features</a>
-        <a>Screenshot</a>
-        <a>Blog</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#screenshot">Screenshot</a>
+        <a href="#blog">Blog</a>
       </div>
 
       {/* Hero Content */}

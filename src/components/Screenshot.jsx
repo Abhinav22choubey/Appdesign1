@@ -40,7 +40,7 @@ export default function Screenshots() {
 
   return (
     <div>
-      <section className="screenshot-container">
+      <section id="screenshot" className="screenshot-container">
         <h2 className="screenshot-title">Checkout Our App Interface Look</h2>
         <p className="screenshot-desc">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc

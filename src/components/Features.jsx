@@ -10,7 +10,7 @@ import supportIcon from "../assets/images/Features/male-telemarketer.png";
 
 export default function AppFeatures() {
   return (
-    <section className="features" style={{ backgroundImage: `url(${bg})` }}>
+    <section id="features" className="features" style={{ backgroundImage: `url(${bg})` }}>
       <h2 className="features-title">App Features</h2>
       <p className="features-desc">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.

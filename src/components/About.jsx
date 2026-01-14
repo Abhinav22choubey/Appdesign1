@@ -4,7 +4,7 @@ import { FaCheck } from "react-icons/fa";
 
 export default function About() {
   return (
-    <section className="about">
+    <section id="about" className="about">
       <h2 className="about-title">About Our App</h2>
       <p className="about-desc">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
