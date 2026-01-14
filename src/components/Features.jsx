@@ -52,7 +52,8 @@ function Feature({ title, icon, align, center, className = "" }) {
     <div className={`features-card ${align} ${center ? "center" : ""} ${className}`}>
       <img src={icon} className="features-icon" alt="" />
       <h4>{title}</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.   </p>
+      <br />
     </div>
   );
 }
