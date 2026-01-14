@@ -4,8 +4,8 @@ import About from "./components/about.jsx";
 import Feature from "./components/Features.jsx";
 import Screenshots from './components/Screenshot.jsx';
 import UseBefore from './components/UseBefore.jsx';
-import TeamReviews from './components/Team.jsx';
-
+import Team from './components/Team.jsx';
+import Reviews from './components/Reviews.jsx';
 export default function App() {
   return (
     <>
@@ -15,6 +15,7 @@ export default function App() {
       <Screenshots></Screenshots>
       <UseBefore></UseBefore>
       <Team></Team>
+      <Reviews></Reviews>
     </>
 
   )

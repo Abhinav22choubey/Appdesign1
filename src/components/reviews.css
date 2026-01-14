@@ -1,0 +1,259 @@
+/* ============================
+   SECTION
+============================ */
+
+.hc-section {
+  position: relative;
+  width: 100%;
+  padding: 120px 0 80px;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.hc-background {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.hc-title {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.hc-subtitle {
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+
+/* ============================
+   WRAPPER
+============================ */
+
+.hc-carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* ============================
+   CAROUSEL
+============================ */
+
+.hc-carousel {
+  position: relative;
+  width: 1000px;
+  height: 420px;
+  perspective: 1000px;
+}
+
+/* ============================
+   BASE CARD (layout same for all)
+============================ */
+
+.hc-review-card {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  /* KEEP ORIGINAL SIZE */
+  width: 400px;
+
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.25);
+
+  transform: translateX(-50%) scale(0.8);
+  transition: all 0.5s ease;
+  opacity: 0.5;
+
+  /* NEW LAYOUT */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 30px 25px;
+}
+
+/* ============================
+   CENTER CARD (FIGMA SIZE)
+============================ */
+
+.hc-review-card.center {
+  width: 770px;
+  height: 357px;
+  padding: 0;
+
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+  z-index: 3;
+
+  box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.24);
+}
+
+/* ============================
+   POSITIONS
+============================ */
+
+.hc-review-card.left {
+  transform: translateX(-150%) scale(0.8);
+  z-index: 2;
+}
+
+.hc-review-card.right {
+  transform: translateX(50%) scale(0.8);
+  z-index: 2;
+}
+
+.hc-review-card.hidden {
+  opacity: 0;
+  transform: translateX(-50%) scale(0);
+}
+
+/* ============================
+   PROFILE IMAGE
+============================ */
+
+.hc-profile {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+/* ============================
+   NAME
+============================ */
+
+.hc-review-name {
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 47px;
+  text-transform: uppercase;
+  color: #232233;
+  margin: 0;
+}
+
+/* ============================
+   ROLE
+============================ */
+
+.hc-review-role {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #232233;
+  margin: 6px 0 20px;
+}
+
+/* ============================
+   TEXT
+============================ */
+
+.hc-review-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #6C6C72;
+  max-width: 647px;
+}
+
+/* ============================
+   BUTTONS
+============================ */
+
+.hc-prev,
+.hc-next {
+  background: #5956e9;
+  border: none;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* ============================
+   DOTS
+============================ */
+
+.hc-dots {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hc-dot {
+  width: 12px;
+  height: 12px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.hc-dot.active {
+  background: #5956e9;
+}
+
+/* ============================
+   MOBILE RESPONSIVE
+============================ */
+
+@media (max-width: 768px) {
+
+  .hc-carousel {
+    width: 100%;
+    height: 420px;
+  }
+
+  .hc-review-card {
+    width: 260px;
+    padding: 20px;
+  }
+
+  .hc-review-card.center {
+    width: 300px;
+    height: auto;
+    padding: 25px 20px;
+  }
+
+  .hc-review-card.left {
+    transform: translateX(-120%) scale(0.85);
+  }
+
+  .hc-review-card.right {
+    transform: translateX(20%) scale(0.85);
+  }
+
+  .hc-review-name {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .hc-review-role {
+    font-size: 16px;
+  }
+
+  .hc-review-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .hc-prev,
+  .hc-next {
+    display: none;
+  }
+}

@@ -1,7 +1,8 @@
 .screenshot-container {
   position: relative;
   padding: 38px;
-  margin: 0px 150px;
+  margin: 0px 150px 100px;
+
   padding-top: 100px;
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
